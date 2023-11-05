@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="erwski">
+    <meta name="description" content="Digitale Präsenz in der Neuzeit">
+    <meta name="keywords" content="Internetpräsenz, Druckprodukte, (...)">
+    
+    <title>Shape: Evolve</title>
+    <link href="/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <!--  Seite 0 - Hauptscreen mit Quadraten am Anfang  -->
+    <script>
+        (function() {
+            const colors = ['red', 'green', 'blue', 'orange', 'purple', 'pink', 'teal', 'brown', 'gray'];
+          
+            for (let i = 0; i < 9; i++) {
+              const square = document.createElement('div');
+              square.classList.add('square');
+              document.body.appendChild(square);
+          
+              const size = Math.floor(Math.random() * 100) + 50;
+              const x = Math.random() * window.innerWidth;
+              const y = Math.random() * window.innerHeight;
+              const color = colors[i % colors.length]; // Verwendung der i-ten Farbe aus dem Array
+          
+              square.style.width = `${size}px`;
+              square.style.height = `${size}px`;
+              square.style.position = 'absolute';
+              square.style.backgroundColor = color;
+              square.style.left = `${x}px`;
+              square.style.top = `${y}px`;
+            }
+          })();
+        </script>
+
+    <div class="logo">
+       <h1><br/>Shape: Evolve<br/></h1>
+       <h3>Internetpräsenz in cool.</h3>
+    </div>
+    <div class="wrapper">
+        <section class="intro">
+            <div class="line"></div>
+        </section>
+
+
+        <!-- Seite 1 - Phase 1 - Umdenken  -->
+        <section class="first shard">
+            <div class="block"></div>
+            <span class="huge-text">Sei Präsent</span>
+            <div class="caption"> Wir machen dich Sichtbar. Lass dich von unseren kreativen Konzepten begeistern. </div>
+            <div class="phase"><span>Phase 1</span>Umdenken</div>
+            <div class="quote">
+               Authentisch. Innovativ. Zeitlos. 
+            </div>
+        </section>
+
+        <!-- Seite 2 - Phase 2 - Meine Skills   -->
+        <section class="second shard">
+            <div class="block"></div>
+            <div class="phase"><span>Phase 2</span>Meine Skills</div>
+        </section>
+
+        <!-- Seite 3 - Phase 3 - ??? -->
+        <section class="third shard">
+            <div class="block"></div>
+            <div class="phase"><span>Phase 3</span>Let's hook up</div> 
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="/app.js"></script>
+
+</body>
+</html>
+
