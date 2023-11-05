@@ -95,14 +95,6 @@ section.shard::before {
     transform: translate(100%, 100%);
 }
 
-/* .character img {
-    position: relative;
-    z-index: 10;
-    height: 90vh;
-    width: auto;
-    transform: translateY(-100%);
-} */
-
 .huge-text {
     font-size: 25rem;
     width: 100%;
